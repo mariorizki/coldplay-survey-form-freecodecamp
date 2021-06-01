@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section>
+      <h1 id="title">Coldplay</h1>
+      <p id="description">
+        Fan Survey Form
+      </p>
+      <div class="container">
+        <form action="" id="survey-form">
+          <div class="input-box">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" placeholder="Name" id="name" required />
+          </div>
+          <div class="input-box">
+            <label for="Email" id="email-label">Email</label>
+            <input type="email" placeholder="Email" id="email" required />
+          </div>
+          <div class="input-box">
+            <label for="Age" id="number-label">Age</label>
+            <input
+              type="number"
+              placeholder="Age"
+              id="number"
+              min="5"
+              max="100"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="job">What is your job?</label>
+            <select name="role" id="dropdown" required>
+              <option selected disabled>Select your job</option>
+              <option value="student">Student</option>
+              <option value="full">Full time job</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <label for="gender">Gender</label>
+            <label>
+              <input name="gender" type="radio" value="male" checked />Male
+            </label>
+            <label>
+              <input name="gender" type="radio" value="female" />Female
+            </label>
+            <label>
+              <input name="gender" type="radio" value="not-sure" />Not sure
+            </label>
+          </div>
+          <div class="input-box">
+            <label for="album"
+              >What is your favorite album from
+              <strong>Coldplay</strong>?</label
+            >
+            <label>
+              <input name="album" type="checkbox" value="early-years" />
+              Early Years
+            </label>
+            <label>
+              <input name="album" type="checkbox" value="parachutes" />
+              Parachutes
+            </label>
+            <label>
+              <input name="album" type="checkbox" value="arobttd" />
+              A Rush of Blood to the Head
+            </label>
+            <label>
+              <input name="album" type="checkbox" value="xy" />
+              X & Y
+            </label>
+            <label>
+              <input name="album" type="checkbox" value="viva-la-vida" />
+              Viva La Vida
+            </label>
+            <label>
+              <input name="album" type="checkbox" value="mx" />
+              Mylo Xyloto
+            </label>
+            <label>
+              <input name="album" type="checkbox" value="ghost-stories" />
+              Ghost Stories
+            </label>
+            <label>
+              <input name="album" type="checkbox" value="ahfod" />
+              A Head Full of Dreams
+            </label>
+            <label>
+              <input name="album" type="checkbox" value="everyday-life" />
+              Everyday Life
+            </label>
+          </div>
+          <div class="input-box">
+            <label for="suggestions">Any sugesstions for future albums?</label>
+            <textarea
+              id="sugesstions"
+              name="sugesstions"
+              placeholder="Enter your sugesstions here..."
+            ></textarea>
+          </div>
+          <div class="submit-btn">
+            <button type="submit" id="submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
