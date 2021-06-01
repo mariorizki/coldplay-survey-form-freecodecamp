@@ -45,7 +45,7 @@ section {
 
 .container {
   background: rgba(255, 255, 255, 0.1);
-  width: 80%;
+  width: 90%;
   border-radius: 0.5rem;
   padding: 2rem;
   backdrop-filter: blur(0.5rem);
